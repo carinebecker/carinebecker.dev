@@ -1,8 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Calistoga&display=swap');
+
+:root {
+  --color-primary: #232946;
+  --color-highlight: #EEBBC3;
+  --color-soft-white: #FFFFFE;
+}
+
 body {
+  background-color: var(--color-soft-white);
+  font-family: Roboto, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
+  font-size: 16px;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  padding: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -10,4 +21,83 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.page-heading, .index-container h1 {
+  color: var(--color-primary);
+  font-family: 'Calistoga', cursive;
+  font-weight: normal;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  width: 80%;
+  margin: 4rem auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.navbar-links a {
+  color: var(--color-primary);
+  font-size: 1.35rem;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+.navbar-links a:hover {
+    -webkit-box-shadow: inset 0px 0px 0px 1rem var(--color-highlight);
+    -moz-box-shadow: inset 0px 0px 0px 1rem var(--color-highlight);
+    box-shadow: inset 0px 0px 0px 1rem var(--color-highlight);
+}
+
+/* INDEX */
+.index-container {
+  display: flex;
+  box-sizing: content-box;
+  flex-direction: column;
+  margin: auto;
+  justify-content: space-evenly;
+  height: 70vh;
+  width: 60%;
+}
+
+.index-container h1 {
+  font-size: 3rem;
+  margin-bottom: 0;
+}
+
+.index-container h2 {
+  font-size: 1.25rem;
+  color: var(--color-primary);
+  font-weight: normal;
+  margin: 0;
+}
+
+.contact a img {
+  width: 36px;
+  height: 36px;
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+/* ABOUT */
+
+.about-sticker {
+  width: 150px;
+  height: 150px;
+}
+
+.about-container {
+  margin: 0 auto;
+  width: 60%;
 }

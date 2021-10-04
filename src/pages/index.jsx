@@ -1,20 +1,25 @@
 import React from 'react';
 import NavBar from '../components/NavBar';
-
+import GithubLogo from '../GitHub-Mark-120px-plus.png'
+import LinkedinLogo from '../linkedin-128px.png'
 
 function Index() {
   return (
     <>
-      <NavBar />
-      <main>
-        <h1>carine becker</h1>
-        <h2>desenvolvedora front-end</h2>
-        <section id="contact">
+      <header>
+        <NavBar />
+      </header>
+      <main className="index-container">
+        <div>
+          <h1>carine becker</h1>
+          <h2>desenvolvedora front-end</h2>
+        </div>
+        <section className="contact">
           <a href="https://github.com/carinebecker">
-              <img src="images/GitHub-Mark-120px-plus.png" alt="Github"/>
+              <img src={ GithubLogo } alt="Github"/>
           </a>
           <a href="https://linkedin.com/in/carinebecker">
-              <img src="images/linkedin-128px.png" alt="Linkedin"/>
+              <img src={ LinkedinLogo } alt="Linkedin"/>
           </a>
           </section>
       </main>
