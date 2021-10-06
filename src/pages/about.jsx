@@ -17,10 +17,9 @@ function About() {
           alt="thinking sticker"
         />
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil quos
-          delectus perspiciatis eaque iure accusantium porro animi ipsam
-          architecto cum? Consequuntur amet placeat quos provident officia
-          perspiciatis quas mollitia odit.
+          Olá, sou a Carine! 👋🏻 <br/>
+          Atualmente moro em Cascavel/PR com meu esposo <a href="https://carlosbecker.com">Carlos</a>, Zakk (chinchilla) e Bash (golden retriever, o mais novo membro da família). <br/>
+          Estou na reta final final do curso da Trybe e adoro front-end.
         </p>
       </main>
       <Footer />

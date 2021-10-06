@@ -13,18 +13,19 @@ function ProjectsCards() {
         .catch((err) => console.log(err));
       const data = results.projects;
       setProjects(data);
+      setIsFetching(false);
     };
     getData();
-    setIsFetching(false);
   }, []);
 
   return (
     <>
-      {isFetching ? (
-        <p>LOADING...</p>
-      ) : (
-        projects.map((project) => <ProjectCard project={project} />)
-      )}
+      { isFetching
+        ? <p>LOADING...</p>
+        : <div className="project-cards-container">
+            { projects.map((project) => <ProjectCard project={project} />) }
+          </div>
+        }
     </>
   );
 }
