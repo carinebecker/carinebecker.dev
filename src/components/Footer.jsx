@@ -5,7 +5,7 @@ function Footer() {
     return (
         <>
         <div className="footer">
-            <a><Link to="/">&#8592; voltar ao início</Link></a>
+            <p><Link to="/">&#8592; voltar ao início</Link></p>
         </div>
         </>
     )
